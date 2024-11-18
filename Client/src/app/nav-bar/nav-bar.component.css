@@ -1,0 +1,30 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+mat-toolbar {
+  font-family: "Ubuntu", medium;
+  font-weight: 500;
+  font-size: 34px;
+  color: #ffffff;
+  background-color: #1c1e28;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.mat-button {
+  font-family: "Ubuntu", medium;
+  font-weight: 500;
+}
+.mat-list-item {
+  display: inline-block;
+  height: auto;
+  width: auto;
+}
+
+.active-list-item {
+  background-color: #f70a6d;
+}

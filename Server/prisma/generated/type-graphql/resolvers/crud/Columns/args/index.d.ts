@@ -1,0 +1,11 @@
+export { AggregateColumnsArgs } from "./AggregateColumnsArgs";
+export { CreateOneColumnsArgs } from "./CreateOneColumnsArgs";
+export { DeleteManyColumnsArgs } from "./DeleteManyColumnsArgs";
+export { DeleteOneColumnsArgs } from "./DeleteOneColumnsArgs";
+export { FindFirstColumnsArgs } from "./FindFirstColumnsArgs";
+export { FindManyColumnsArgs } from "./FindManyColumnsArgs";
+export { FindUniqueColumnsArgs } from "./FindUniqueColumnsArgs";
+export { GroupByColumnsArgs } from "./GroupByColumnsArgs";
+export { UpdateManyColumnsArgs } from "./UpdateManyColumnsArgs";
+export { UpdateOneColumnsArgs } from "./UpdateOneColumnsArgs";
+export { UpsertOneColumnsArgs } from "./UpsertOneColumnsArgs";

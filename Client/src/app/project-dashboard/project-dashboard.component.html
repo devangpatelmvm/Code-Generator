@@ -1,0 +1,84 @@
+<div class="body-content">
+  <div class="codeGenerator">
+    <p class="codeGenerationTitel">Code Generator</p>
+
+    <div class="topButton">
+      <a mat-button class="accountButton" matTooltip="Account">
+        Account <mat-icon matSuffix>perm_identity</mat-icon>
+      </a>
+
+      <a class="darkMode">
+        <input
+          id="darkMode"
+          type="checkbox"
+          [checked]="darkMode$ | async"
+          (change)="toggleDarkTheme()"
+          class="toggle"
+        />
+        <label class="toggle-label" for="darkMode">
+          <div class="sun" matTooltip="Switch to Light Mode">
+            <span id="maticonbuttonSize" class="material-symbols-outlined">
+              light_mode
+            </span>
+          </div>
+          <div class="moon" matTooltip="Switch to Dark Mode">
+            <span id="maticonbuttonSize" class="material-symbols-outlined">
+              dark_mode
+            </span>
+          </div>
+        </label>
+      </a>
+
+      <a mat-button class="onLogout" matTooltip="Logout" (click)="onLogout()">
+        Logout <span class="material-symbols-outlined">logout</span>
+      </a>
+    </div>
+  </div>
+
+  <mat-card class="outerCard" [style]="darkModecolor">
+    <div class="welcomeCg">
+      <p>Welcome to Code Generator</p>
+    </div>
+    <div class="myProject">
+      <p>My Projects</p>
+    </div>
+    <div class="card">
+      <mat-card
+        class="createProjectCard"
+        routerLink="/create-new-project"
+        matTooltip="Create project"
+      >
+        <p style="margin-top: 28px">+ Create Project</p>
+      </mat-card>
+      <mat-card
+        class="projectCard"
+        routerLink="/project-display"
+        matTooltip="Open project"
+      >
+        <p style="font-size: 24px">Projects</p>
+        <p style="font-size: 16px" class="lastEdited">
+          Last Edited : 6 minutes ago by you
+        </p>
+        <p class="iconSymbols">
+          <button
+            mat-icon-button
+            id="iconColor"
+            class="material-symbols-outlined"
+          >
+            filter_none
+          </button>
+          <button
+            mat-icon-button
+            id="iconColor"
+            class="material-symbols-outlined"
+          >
+            delete
+          </button>
+        </p>
+      </mat-card>
+    </div>
+  </mat-card>
+</div>
+<!-- <div class="footer" >
+  <h2>footer</h2>
+</div> -->

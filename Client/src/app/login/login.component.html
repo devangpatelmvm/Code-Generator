@@ -1,0 +1,71 @@
+<div class="content-body">
+  <div class="codeGenerator">Code Generator</div>
+
+  <mat-card class="matCardForm" [style]="darkModecolor">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" novalidate>
+      <p class="loginTitle">Login</p>
+      <br />
+      <div class="form-group">
+        <mat-label>Email Address </mat-label><br />
+        <mat-form-field appearance="outline">
+          <input
+            matInput
+            type="email"
+            placeholder="Enter email address"
+            class="form-control"
+            formControlName="email"
+            autocomplete="off"
+          />
+          <mat-hint
+            ><span
+              *ngIf="!email.valid && (email.touched || formSubmitted)"
+              class="error-block"
+            >
+              Please Provide Valid Email
+            </span></mat-hint
+          >
+        </mat-form-field>
+      </div>
+      <div class="form-group">
+        <mat-label>Password </mat-label><br />
+        <mat-form-field appearance="outline">
+          <input
+            matInput
+            type="password"
+            placeholder="Enter Password"
+            class="form-control"
+            formControlName="password"
+            name="password"
+            autocomplete="off"
+          />
+          <mat-hint
+            ><span
+              *ngIf="!password.valid && (password.touched || formSubmitted)"
+              class="error-block"
+            >
+              Please Enter Correct Password
+            </span></mat-hint
+          >
+        </mat-form-field>
+      </div>
+      <div class="form-group">
+        <button mat-raised-button type="submit" (click)="showSpinner()">
+          Login
+          <ngx-spinner
+            bdColor="rgba(0, 0, 0, 0.8)"
+            size="medium"
+            color="#945b5b"
+            type="ball-pulse"
+            [fullScreen]="true"
+            ><p style="color: white">Loading...</p></ngx-spinner
+          >
+        </button>
+      </div>
+      <br />
+      <p class="createAccount">
+        Don't have an account?
+        <a routerLink="/register">&nbsp; Create Account</a>
+      </p>
+    </form>
+  </mat-card>
+</div>

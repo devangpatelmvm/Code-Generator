@@ -1,0 +1,89 @@
+.content-body {
+  height: 100%;
+  align-items: center;
+  background-image: url(./Brand-shape.svg);
+  background-size: 100%;
+  background-position: 1.3rem 1.3rem;
+  background-repeat: no-repeat;
+}
+
+.codeGenerator {
+  padding: 2%;
+  margin-left: 2%;
+  font-size: 3rem;
+  font-family: "Ubuntu";
+  font-weight: 500;
+}
+
+.matCardForm {
+  max-width: 340px;
+  padding: 2%;
+  border-radius: 15px;
+  margin-top: 3%;
+  margin-left: 35%;
+  margin-right: 35%;
+  font-family: "Ubuntu", medium;
+  color: #ffffff;
+  background-color: #1c1e28;
+}
+
+.mat-form-field {
+  width: 100%;
+  max-width: 360px;
+  font-size: 16px;
+  font-family: "Ubuntu";
+  font-weight: 500;
+}
+mat-label {
+  font-size: 15px;
+  font-family: "Ubuntu";
+  font-weight: 500;
+}
+
+mat-hint ::ng-deep {
+  color: red;
+  font-family: "Ubuntu";
+  font-weight: 500;
+}
+
+.loginTitle {
+  font-size: 20px;
+  font-family: "Ubuntu";
+  font-weight: 500;
+}
+
+.createAccount {
+  font-size: 15px;
+  text-align: center;
+  font-family: "Ubuntu";
+  font-weight: 400;
+}
+
+::ng-deep .mat-input-element::placeholder {
+  color: gray;
+  font-family: "Ubuntu";
+  font-weight: 400;
+}
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+  color: #ffffff !important ;
+  /* color: #1c1e28; */
+  margin-top: -1px;
+  margin-bottom: -4px;
+  font-family: "Ubuntu";
+  font-weight: 400;
+}
+
+::ng-deep .mat-form-field-flex > .mat-form-field-infix {
+  padding: 0.4em 0px !important;
+}
+
+button {
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+  max-width: 350px;
+  font-family: "Ubuntu";
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #0070ad;
+}

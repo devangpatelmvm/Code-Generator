@@ -1,0 +1,839 @@
+mat-toolbar {
+  color: #ffffff;
+  background-color: #1c1e28;
+  border: 1px solid rgb(70, 70, 70);
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.codeGenerator {
+  margin-left: 1.2rem;
+  font-size: 1.7rem;
+  font-family: "Ubuntu";
+  font-weight: 500;
+}
+
+.canvasSize {
+  margin: 3rem;
+  padding: 0.4rem;
+  background-color: #272936;
+  border-radius: 5px;
+  font-size: 10px;
+}
+
+.selected-viewIcon {
+  background-color: rgb(81, 81, 81);
+}
+
+.runButton {
+  background-color: #0070ad;
+}
+
+.material-symbols-rounded {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.example-container {
+  width: 100%;
+  max-width: 59.375rem;
+  height: 100%;
+  height: 550px;
+}
+
+.example-container1 {
+  width: 100%;
+  max-width: 80rem;
+  height: 100%;
+  height: 550px;
+}
+
+.example-container2 {
+  width: 100%;
+  max-width: 80rem;
+  height: 100%;
+  height: 550px;
+}
+
+.mat-sidenav-left {
+  color: #ffffff;
+  background-color: #1c1e28;
+  height: 100%;
+  width: 55px;
+  max-width: 100%;
+  border: 1px solid rgb(70, 70, 70);
+}
+
+.example-sidenav-content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  height: 550px;
+  background-color: #272936;
+  overflow: hidden;
+}
+
+.example-sidenav-content1 {
+  display: flex;
+  max-width: 100%;
+  height: 100%;
+  min-height: 550px;
+  max-height: auto;
+  background-color: #272936;
+  overflow: hidden;
+}
+
+.example-sidenav {
+  padding: 10px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 320px;
+  background-color: #1c1e28;
+}
+
+
+/* Mat Search Input */
+.mat-form-field {
+  padding: 0.6rem;
+  width: 90%;
+  font-size: 1rem;
+  font-family: "Ubuntu";
+  font-weight: 500;
+}
+
+.matSearch {
+  color: gray;
+}
+
+::ng-deep .mat-input-element::placeholder {
+  color: gray;
+  font-family: "Ubuntu";
+  font-weight: 500;
+}
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+  color: #ffffff !important;
+  margin-top: 1px;
+  margin-bottom: -2px;
+  background-color: none;
+  font-family: "Ubuntu";
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+::ng-deep .mat-form-field-flex > .mat-form-field-infix {
+  padding: 0.6em 2px !important;
+}
+
+/* mat-expansion-panel */
+
+.mat-tab-group {
+  margin-top: -2rem;
+  color: #ffffff;
+}
+
+::ng-deep.mat-tab-label,
+::ng-deep.mat-tab-label-active {
+  min-width: 7rem !important;
+  padding: 3px !important;
+  margin: 1px !important;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-family: "Ubuntu", medium;
+}
+
+::ng-deep.mat-tab-label-active {
+  color: #2196f3;
+}
+
+/* ink bar */
+::ng-deep .mat-ink-bar {
+  background-color: var(--primary-color, #2196f3) !important;
+}
+
+mat-expansion-panel {
+  font-size: 1.8rem;
+  font-family: "Ubuntu", medium;
+  color: #ffffff;
+  border: 1px solid rgb(70, 70, 70);
+  background-color: #272936;
+}
+
+mat-panel-title {
+  font-size: 1rem;
+  font-family: "Ubuntu";
+  font-weight: 500;
+}
+
+.accordionHeaderLeft {
+  height: 2.5rem;
+  font-family: "Ubuntu";
+  font-weight: 500;
+}
+
+.accordiontitleLeft {
+  font-size: 1rem;
+  font-family: "Ubuntu";
+  font-weight: 500;
+}
+
+.drawerBottom {
+  color: #ffffff;
+  position: absolute;
+  width: 90%;
+  bottom: 0rem;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  overflow-y: scroll;
+  box-shadow: inset 0 0 4px #707070;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #515050;
+  border-radius: 10px;
+}
+
+.center-mat-card {
+  margin-top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 15.5rem;
+  height: 100%;
+  max-height: 22rem;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  /* overflow-x: auto; */
+  overflow-y: auto;
+}
+
+.lightModeIcon {
+  position: absolute;
+  height: 40px;
+  width: auto;
+  margin-left: 75%;
+  margin-top: 0.6rem;
+  color: #272936;
+  background-color: #1c1e28;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+#maticonbuttonSize {
+  width: 20px;
+}
+
+.ZoomInOutIcon {
+  position: absolute;
+  height: 40px;
+  width: auto;
+  margin-left: 5%;
+  margin-top: 0.6rem;
+  color: #272936;
+  background-color: #1c1e28;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.projectSaveButton {
+  position: absolute;
+  margin-top: 510px;
+  margin-left: 80%;
+}
+
+/* Right Side Mat Drawer */
+
+.right-Mat-sidenav-container {
+  position: absolute;
+  width: 100%;
+  max-width: 25%;
+  top: 4.1rem;
+  right: 0rem;
+  height: 100%;
+  max-height: 550px;
+}
+
+.right-mat-sidenav {
+  width: 100%;
+}
+
+.material-symbols-outlined {
+  cursor: pointer;
+}
+
+/* Widget Tree Css */
+.widgetTreeTitle {
+  color: #ffffff;
+  padding: 5px;
+  font-family: "Ubuntu";
+  font-weight: 400;
+}
+
+mat-divider {
+  background-color: #515050;
+}
+
+/* Tree */
+.example-tree-invisible {
+  display: none;
+}
+
+/* .example-tree ul, */
+.example-tree li {
+  margin-top: 10px;
+  margin-bottom: 0;
+  margin-left: 0px;
+  list-style-type: none;
+}
+
+.mat-nested-tree-node {
+  top: -24px;
+}
+
+.mat-tree-node {
+  color: #ffffff;
+}
+
+.matTreeNodeToggle {
+  left: auto;
+}
+
+ul,
+li {
+  list-style: none;
+  margin-left: 15px;
+  margin-top: -20px;
+  padding: 0;
+  background-color: #1c1e28;
+}
+
+li {
+  padding-left: 8px;
+  border: 2px solid #515050;
+  border-width: 0 0 0px 1px;
+}
+
+li.mat-tree-node,
+li div {
+  margin: 0;
+  position: relative;
+  top: -24px;
+}
+
+/* .example-tree-progress-bar {
+  margin-left: 30px;
+}
+
+.example-tree-nested-node {
+  padding-left: 30px;
+}
+
+mat-tree {
+  margin-left: 40px;
+}
+.mat-tree-node {
+  padding: 0;
+  background-color: white;
+}
+
+.mat-nested-tree-node {
+  top: -24px;
+}
+
+ul, li { 
+  list-style: none; 
+  margin: 0; 
+  padding: 0;  
+}
+
+li.example-tree-container {
+  border-bottom: 0;
+}
+
+ul { 
+  padding-left: 40px; 
+}
+
+li { 
+  padding-left: 40px;
+  border: 1px dotted grey;
+  border-width: 0 0 1px 1px; 
+  position: relative;
+  top: -24px;
+}
+
+li.mat-tree-node,
+li div { 
+  margin: 0;
+  position: relative;
+  top: 24px; 
+}
+
+li ul {
+  border-top: 1px dotted grey;
+  margin-left: -40px;
+  padding-left: 60px;
+}
+
+.mat-nested-tree-node:last-child ul {
+  border-left: 1px solid white;
+  margin-left: -41px;
+}
+
+.mat-icon-button {
+  z-index: 100;
+} */
+
+/* # Card Light-Dark Mode */
+
+.centerLightPosition {
+  background-color: #272936;
+  border-radius: 5px;
+}
+
+.screenLightMode {
+  transition: all 0.3s linear;
+  color: #2d3436;
+}
+
+.screenDarkMode {
+  transition: all 0.3s linear;
+  background-color: #1c1e28;
+  color: #dfe6e9;
+}
+
+.toggle {
+  display: none;
+}
+.toggle-label {
+  position: relative;
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.dark,
+.light {
+  position: absolute;
+  width: 100%;
+  height: 35px;
+  transition: top 0.2s;
+  user-select: none;
+}
+
+.dark {
+  top: 0;
+  transition: all 0.3s linear;
+}
+
+.light {
+  top: -150%;
+  transition: all 0.3s linear;
+}
+
+.toggle:checked + .toggle-label .dark {
+  top: 150%;
+  transition: all 0.3s linear;
+}
+
+.toggle:checked + .toggle-label .light {
+  top: 0;
+  transition: all 0.3s linear;
+}
+
+/* Drop and Drap */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.flex-item {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  text-align: center;
+  align-items: center;
+  margin: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 0 4rem;
+  background-color: transparent;
+  position: relative;
+}
+.flex-inner-item {
+  width: 80px;
+  height: 105px;
+  margin: 2px;
+  text-align: center;
+  justify-content: center;
+  color: #ffffff;
+  background-color: #272936;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 4px;
+  font-size: 13px;
+  font-family: "Ubuntu";
+  font-weight: 400;
+  position: relative;
+}
+
+.dnd-container {
+  width: 15.5rem;
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.example-form-field {
+  width: 90%;
+}
+
+.dnd-list {
+  min-height: 60px;
+  overflow: hidden;
+  display: block;
+}
+
+.dnd-box {
+  border-bottom: solid 1px #ccc;
+  color: rgba(0, 0, 0, 0.87);
+  display: flex;
+  box-sizing: border-box;
+  cursor: move;
+  font-size: 14px;
+}
+
+.cdk-drag-preview {
+  box-sizing: border-box;
+  border-radius: 2px;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.cdk-drag-placeholder {
+  opacity: 0;
+}
+
+.cdk-drag-animating {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.example-box:last-child {
+  border: none;
+}
+
+.example-list.cdk-drop-list-dragging .example-box:not(.cdk-drag-placeholder) {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+/* removeLastDroppedItem Visibility */
+.dnd-box #removeLastDroppedItem {
+  visibility: hidden;
+}
+.dnd-box:hover #removeLastDroppedItem {
+  visibility: visible;
+}
+
+/* Stepper  */
+mat-stepper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mat-stepper-horizontal {
+  margin-top: 2%;
+  margin-left: 5%;
+}
+
+::ng-deep .mat-step-header .mat-step-icon {
+  background-color: #707070;
+}
+
+::ng-deep .mat-step-header .mat-step-icon-selected {
+  background-color: #2196f3;
+}
+
+::ng-deep .mat-step-header .mat-step-icon-state-edit {
+  background-color: #2196f3;
+}
+
+::ng-deep .mat-step-header .mat-step-icon {
+  height: 30px;
+  width: 30px;
+}
+
+::ng-deep .mat-horizontal-stepper-header {
+  box-sizing: border-box;
+  flex-direction: column;
+  height: auto;
+  padding: 24px;
+}
+::ng-deep .mat-horizontal-stepper-header .mat-step-label {
+  padding: 10px 0px 12px !important;
+  color: #707070 !important;
+}
+
+::ng-deep
+  .mat-stepper-label-position-bottom
+  .mat-horizontal-stepper-header:not(:first-child)::before,
+::ng-deep
+  .mat-stepper-label-position-bottom
+  .mat-horizontal-stepper-header:not(:last-child)::after {
+  top: 68px !important;
+  color: #605e5e !important;
+}
+
+::ng-deep
+  .mat-horizontal-stepper-header[aria-selected="true"]
+  ~ .mat-stepper-horizontal-line {
+  border-top-width: 1px;
+  border-top-color: hsl(0, 0%, 50%) !important;
+}
+
+::ng-deep
+  .mat-horizontal-stepper-header[ng-reflect-selected="false"][ng-reflect-active="true"]
+  + .mat-stepper-horizontal-line {
+  border-top-color: #0070ad;
+}
+
+/* stepper Button */
+
+mat-label {
+  font-size: 15px;
+  font-family: "Ubuntu";
+  font-weight: 400;
+}
+
+.matFeildFlex {
+  display: flex;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.matFeild {
+  width: 100%;
+  max-width: 320px;
+  font-size: 15px;
+  font-family: "Ubuntu";
+  font-weight: 500;
+}
+
+.stepperLabel {
+  font-size: 15px;
+  font-family: "Ubuntu";
+  font-weight: 400;
+}
+
+.steponeFeilds {
+  width: 100%;
+  max-width: 400px;
+  font-size: 15px;
+  font-family: "Ubuntu";
+  font-weight: 500;
+}
+
+.stepTwoFeilds {
+  width: 100%;
+  max-width: 320px;
+  font-size: 15px;
+  font-family: "Ubuntu";
+  font-weight: 500;
+}
+
+::ng-deep .mat-select-value {
+  color: gray;
+}
+
+:host::ng-deep .mat-select-placeholder {
+  color: gray;
+}
+
+not-empty-select.mat-selected {
+  color: gray;
+}
+
+:host .mat-select-value-text {
+  color: gray;
+}
+
+::ng-deep .mat-select-arrow {
+  color: gray;
+}
+
+.matButton {
+  margin-top: 8%;
+  margin-left: 65%;
+}
+.stepOneButton {
+  margin-top: 5%;
+  margin-left: 82%;
+}
+
+.matButtonStepTwo {
+  margin-top: 10%;
+  margin-left: 65%;
+}
+
+.stepperThirdLabel {
+  padding: 2px;
+  font-size: 14px;
+  font-family: "Ubuntu";
+  font-weight: 400;
+}
+
+.stepperThirdLabelColor {
+  color: gray;
+}
+
+.previousButton,
+.finishButton {
+  font-size: 16px;
+  text-align: center;
+  height: 36px;
+  max-height: 100%;
+  width: 100px;
+  max-width: 100%;
+  margin-left: 8%;
+  display: inline-block;
+  font-family: "Ubuntu";
+  font-weight: 500;
+}
+
+.previousButton {
+  border: 1px solid #0070ad;
+  color: #0070ad;
+  background-color: transparent;
+}
+
+.finishButton {
+  color: #ffffff;
+  background-color: #0070ad;
+}
+
+
+
+table {
+  width: 95%;
+  /* margin: auto; */
+  margin-top: 25px;
+  margin-right: 40px;
+  font-family: "Ubuntu";
+  font-weight: 500;
+  border: 1px solid gray;
+  border-collapse: collapse;
+
+}
+
+ 
+tr.mat-row {
+  /* row border */
+  border-bottom: 1px solid gray;
+}
+
+th {
+  /* row border */
+  border-bottom: 1px solid gray;
+}
+
+td.mat-cell {
+  /* row padding */
+  /* padding: 20px 0; */
+  border: none;
+}
+
+tr.mat-row {
+  /* row border */
+  border: 1px solid gray;
+}
+
+
+h2 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.table-header {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  font-family: "Ubuntu";
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.mat-header-cell {
+  background-color: rgb(39, 41, 54) !important;
+  font-size: 14px;
+  min-height: 48px;
+  padding-left: 10PX;
+  border-right: 1px solid gray;
+  color: gray;
+}
+
+.mat-cell {
+  font-size: 14px;
+  min-height: 48px;
+  padding-left: 10PX;
+  border-right: 1px solid gray !important;
+}
+
+.addRowButton{
+position: absolute;
+left: 91%;
+top: 355px; 
+}
+
+.buttonStepperOne{
+  position: absolute;
+  left: 56%;
+  top: 280px; 
+}
+
+.button-add-row {
+  background: #2196f3;
+  color: #ffffff;
+}
+
+.button-remove-rows {
+  background: red;
+  color: #ffffff;
+  margin-right: 5px;
+}
+
+.button-remove {
+  color: red;
+}
+
+
+/* ngx-avter */
+
+mat-list-option[aria-selected="true"] {
+  background: #272936;
+}
+
+.userListView{
+  border-width: 0px 0px 1px 0px;
+  border-color: #272936;
+  border-style: solid;
+}
+
+.ngx-avter{
+  display: flex;
+}
+
+.ngx-avterText{
+  position: relative;
+  font-size: 15px;
+  color: gray;
+  left: 15px;
+}
+
+.ngx-avterIcon{
+  position: relative;
+  top: 6px;
+}

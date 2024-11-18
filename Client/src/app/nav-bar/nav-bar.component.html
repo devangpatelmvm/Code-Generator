@@ -1,0 +1,23 @@
+<ng-container>
+    <mat-toolbar class="fixed">
+      <mat-toolbar-row>
+        <span class="codeGenerator">Code generator</span>
+        <span class="example-spacer"> </span>
+        <mat-list-item>
+          <a mat-button matTooltip="Account"
+            routerLinkActive="active-list-item"
+            [routerLinkActiveOptions]="{ exact: true }"
+            routerLink="''" >
+            Account <mat-icon matSuffix>perm_identity</mat-icon>
+          </a>
+        </mat-list-item>
+
+        <mat-list-item>
+          <a mat-button matTooltip="Logout" routerLinkActive="active-list-item" (click)="onLogout()">
+            Logout <mat-icon>exit_to_app</mat-icon>
+          </a>
+        </mat-list-item>
+  
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </ng-container>

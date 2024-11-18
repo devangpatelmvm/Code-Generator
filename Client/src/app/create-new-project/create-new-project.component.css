@@ -1,0 +1,139 @@
+.outerCard {
+  height: 480px;
+  max-height: 100%;
+  margin-top: 4%;
+  margin-left: 8%;
+  margin-right: 8%;
+  border-radius: 15px;
+}
+
+.nextButton {
+  margin-left: 93%;
+}
+
+.createProjectCancel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.createNewProject {
+  margin-top: -10px;
+  font-size: 26px;
+  font-family: "Ubuntu";
+  font-weight: 500;
+}
+
+.material-symbols-outlined {
+  border-radius: 90%;
+  background-color: #c3c6d5;
+  cursor: pointer;
+  font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 100, "opsz" 48;
+}
+
+.closeIcon {
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 2px;
+  background-color: #9a9eb0;
+}
+
+.projectMatFeild {
+  width: 100%;
+  max-width: 1020px;
+  font-size: 15px;
+  font-family: "Ubuntu";
+  font-weight: 500;
+  color: grey;
+}
+
+mat-label {
+  font-size: 15px;
+  font-family: "Ubuntu";
+  font-weight: 400;
+}
+
+mat-hint ::ng-deep {
+  color: red;
+  font-family: "Ubuntu";
+  font-weight: 500;
+}
+
+::ng-deep .mat-input-element::placeholder {
+  color: gray;
+  font-family: "Ubuntu";
+  font-weight: 500;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+  color: #ffffff !important;
+  font-family: "Ubuntu";
+  font-weight: 500;
+}
+
+/* Mat Select  */
+
+.matFeildFlex {
+  display: flex;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.matFeild {
+  width: 100%;
+  max-width: 500px;
+  font-size: 15px;
+  font-family: "Ubuntu";
+  font-weight: 500;
+}
+
+::ng-deep .mat-select-value {
+  color: gray;
+}
+
+:host::ng-deep .mat-select-placeholder {
+  color: gray;
+}
+
+not-empty-select.mat-selected {
+  color: gray;
+}
+
+:host .mat-select-value-text {
+  color: gray;
+}
+
+::ng-deep .mat-select-arrow {
+  color: gray;
+}
+
+button {
+  font-size: 16px;
+  text-align: center;
+  height: 45px;
+  max-height: 100%;
+  width: 200px;
+  max-width: 100%;
+  margin-left: 6%;
+  display: inline-block;
+  font-family: "Ubuntu";
+  font-weight: 500;
+}
+.matButton {
+  margin-top: 2%;
+  margin-left: 54%;
+}
+
+.clearAllButton {
+  border: 1px solid #0070ad;
+  color: #0070ad;
+  background-color: transparent;
+}
+
+.createProjectButton {
+  color: #ffffff;
+  background-color: #0070ad;
+}
+
+

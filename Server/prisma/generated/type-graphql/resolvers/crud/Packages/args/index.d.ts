@@ -1,0 +1,11 @@
+export { AggregatePackagesArgs } from "./AggregatePackagesArgs";
+export { CreateOnePackagesArgs } from "./CreateOnePackagesArgs";
+export { DeleteManyPackagesArgs } from "./DeleteManyPackagesArgs";
+export { DeleteOnePackagesArgs } from "./DeleteOnePackagesArgs";
+export { FindFirstPackagesArgs } from "./FindFirstPackagesArgs";
+export { FindManyPackagesArgs } from "./FindManyPackagesArgs";
+export { FindUniquePackagesArgs } from "./FindUniquePackagesArgs";
+export { GroupByPackagesArgs } from "./GroupByPackagesArgs";
+export { UpdateManyPackagesArgs } from "./UpdateManyPackagesArgs";
+export { UpdateOnePackagesArgs } from "./UpdateOnePackagesArgs";
+export { UpsertOnePackagesArgs } from "./UpsertOnePackagesArgs";

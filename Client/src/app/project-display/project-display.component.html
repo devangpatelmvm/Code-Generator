@@ -1,0 +1,54 @@
+<div>
+    <app-nav-bar></app-nav-bar>
+</div>
+<div class="body">
+<mat-form-field appearance="standard">
+    <mat-label>Search</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Mia" #input/>
+  </mat-form-field>
+<div class="mat-elevation-z8" >
+    <table mat-table [dataSource]="dataSource" [ngStyle]="styleObject()" >
+  
+      <ng-container matColumnDef="projectName" >
+        <th mat-header-cell *matHeaderCellDef [ngStyle]="styleObject()"> Project Name </th>
+        <td mat-cell *matCellDef="let element" [ngStyle]="styleObject()" > {{ element.name }} </td>
+      </ng-container>
+  
+      <ng-container matColumnDef="uiModules">
+        <th mat-header-cell *matHeaderCellDef [ngStyle]="styleObject()" > Ui Modules </th>
+        <td mat-cell *matCellDef="let element" [ngStyle]="styleObject()"> {{ element.framework }} </td>
+      </ng-container>
+  
+      <ng-container matColumnDef="backendModules">
+        <th mat-header-cell *matHeaderCellDef [ngStyle]="styleObject()"> Backend Modules </th>
+        <td mat-cell *matCellDef="let element" [ngStyle]="styleObject()"> {{ 'node' }} </td>
+      </ng-container>
+  
+      <ng-container matColumnDef="action">
+        <th mat-header-cell *matHeaderCellDef [ngStyle]="styleObject()">Action</th>
+        <td mat-cell *matCellDef="let element index as i" [ngStyle]="styleObject()">
+         
+          <button mat-button color="primary" matTooltip="Download Project" (click)="download(element.id, element.name); showSpinner()" >
+            <span class="material-symbols-outlined"> download</span>
+          </button>
+
+          <button mat-button matTooltip="Delete Project" color="warn" (click)="openDialog(element.id)">
+            <mat-icon>delete</mat-icon>
+          </button>
+          <mat-progress-bar *ngIf=" progressStatus === true && element.id === idProgessBar"  mode="indeterminate" [value]="progress"></mat-progress-bar>
+        </td>
+      </ng-container>
+      
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    <mat-paginator [pageSizeOptions]="[5, 10, 20]" [ngStyle]="styleObject()"
+    showFirstLastButtons 
+    aria-label="Select page of periodic elements">
+  </mat-paginator>
+  </div>
+</div>
+
+
+
+

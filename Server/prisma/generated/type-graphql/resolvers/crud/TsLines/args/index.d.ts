@@ -1,0 +1,11 @@
+export { AggregateTsLinesArgs } from "./AggregateTsLinesArgs";
+export { CreateOneTsLinesArgs } from "./CreateOneTsLinesArgs";
+export { DeleteManyTsLinesArgs } from "./DeleteManyTsLinesArgs";
+export { DeleteOneTsLinesArgs } from "./DeleteOneTsLinesArgs";
+export { FindFirstTsLinesArgs } from "./FindFirstTsLinesArgs";
+export { FindManyTsLinesArgs } from "./FindManyTsLinesArgs";
+export { FindUniqueTsLinesArgs } from "./FindUniqueTsLinesArgs";
+export { GroupByTsLinesArgs } from "./GroupByTsLinesArgs";
+export { UpdateManyTsLinesArgs } from "./UpdateManyTsLinesArgs";
+export { UpdateOneTsLinesArgs } from "./UpdateOneTsLinesArgs";
+export { UpsertOneTsLinesArgs } from "./UpsertOneTsLinesArgs";

@@ -1,0 +1,11 @@
+export { AggregateCssArgs } from "./AggregateCssArgs";
+export { CreateOneCssArgs } from "./CreateOneCssArgs";
+export { DeleteManyCssArgs } from "./DeleteManyCssArgs";
+export { DeleteOneCssArgs } from "./DeleteOneCssArgs";
+export { FindFirstCssArgs } from "./FindFirstCssArgs";
+export { FindManyCssArgs } from "./FindManyCssArgs";
+export { FindUniqueCssArgs } from "./FindUniqueCssArgs";
+export { GroupByCssArgs } from "./GroupByCssArgs";
+export { UpdateManyCssArgs } from "./UpdateManyCssArgs";
+export { UpdateOneCssArgs } from "./UpdateOneCssArgs";
+export { UpsertOneCssArgs } from "./UpsertOneCssArgs";

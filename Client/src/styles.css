@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+/* @import url("https://unpkg.com/@coreui/coreui/dist/css/coreui.min.css"); */
+/* import '~@coreui/coreui/dist/css/coreui.min.css' */
+
+  html, body { height: 100%; }
+  body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body:not(.dark-mode-preloading) {
+  transition: all 0.3s linear;
+}
+
+body.light-mode{
+  background-color: #272936;
+  color: #dfe6e9;
+}
+
+body.dark-mode{
+  background-color: #dfe6e9;
+  color: #2d3436;
+}
+

@@ -1,0 +1,94 @@
+.content-body{
+  height: 100%;
+  align-items: center;
+  background-image: url(./Brand-shape.svg);
+  background-size: 100%;
+  background-position: 20px 20px;
+  background-repeat: no-repeat;
+}
+
+.codeGenerator{
+  padding: 2%;
+  margin-left: 2%;
+  font-size : 3.75vw;
+  font-family: 'Ubuntu';
+  font-weight: 500;
+}
+
+mat-card {
+  width: 100%;
+  max-width: 340px;
+  padding: 2%;
+  border-radius: 15px;
+  margin-top: 3%;
+  margin-left: 35%;
+  margin-right: 35%;
+  color: white;
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  background-color : #1c1e28;
+}
+
+.createAccountTitle{
+  font-size: 1.25rem;
+  font-family: 'Ubuntu';
+  font-weight: 500;
+}
+
+.alreadyAccount{
+  font-size: 15px;
+  text-align: center;
+  font-family: 'Ubuntu';
+  font-weight: 400;
+}
+
+.mat-form-field {
+  width: 100%;
+  max-width: 22.5;
+  font-size: 1.25vw;
+  font-family: 'Ubuntu';
+  font-weight: 500;
+}
+
+mat-label {
+  font-size: 1.25vw;
+  font-family: 'Ubuntu';
+  font-weight: 500;
+}
+
+mat-hint ::ng-deep{
+  color: red;
+  font-family: 'Ubuntu';
+  font-weight: 500;
+}
+
+::ng-deep .mat-input-element::placeholder{
+  color: gray;
+  font-family: 'Ubuntu';
+  font-weight: 500;
+ }
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+  color: #ffffff !important;
+  font-family: 'Ubuntu';
+  font-weight: 500;
+ }
+::ng-deep .mat-form-field-flex > .mat-form-field-infix { padding: 0.4em 0px !important;}
+
+
+button {
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 350px;
+  color: #ffffff;
+  background-color: #4dabf5;
+  font-family: 'Ubuntu';
+  font-weight: 500;
+}
+
+a:hover {
+  color: #4dabf5;
+  text-decoration: none;
+  font-family: 'Ubuntu', medium;
+}
+

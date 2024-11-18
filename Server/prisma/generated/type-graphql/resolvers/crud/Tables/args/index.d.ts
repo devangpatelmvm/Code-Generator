@@ -1,0 +1,11 @@
+export { AggregateTablesArgs } from "./AggregateTablesArgs";
+export { CreateOneTablesArgs } from "./CreateOneTablesArgs";
+export { DeleteManyTablesArgs } from "./DeleteManyTablesArgs";
+export { DeleteOneTablesArgs } from "./DeleteOneTablesArgs";
+export { FindFirstTablesArgs } from "./FindFirstTablesArgs";
+export { FindManyTablesArgs } from "./FindManyTablesArgs";
+export { FindUniqueTablesArgs } from "./FindUniqueTablesArgs";
+export { GroupByTablesArgs } from "./GroupByTablesArgs";
+export { UpdateManyTablesArgs } from "./UpdateManyTablesArgs";
+export { UpdateOneTablesArgs } from "./UpdateOneTablesArgs";
+export { UpsertOneTablesArgs } from "./UpsertOneTablesArgs";

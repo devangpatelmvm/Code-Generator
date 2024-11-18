@@ -1,0 +1,88 @@
+  <mat-card class="outerCard" [style]="darkModecolor" > 
+  <div class="createProjectCancel">
+  <p class="createNewProject">Create New Project</p>
+      <mat-icon matTooltip="Back" class="closeIcon" routerLink="/project-dashboard">close</mat-icon>
+  </div>
+
+    <form [formGroup]="projectNameForm" >
+      <div class="form-group" >
+        <mat-label>Project Name</mat-label>
+        <mat-form-field class="projectMatFeild" appearance="outline"  >
+         <input matInput placeholder="Enter Project Name" 
+         formControlName="projectName" class="form-control" [(ngModel)]="projectNamepass" required autocomplete="off"/>
+         <mat-error *ngIf="projectName.invalid">Please enter a project name with min 3 character</mat-error>
+        </mat-form-field>
+      </div>
+
+      <div class="matFeildFlex">
+        <div class="form-group">
+        <mat-label>Framework</mat-label>
+        <mat-form-field class="matFeild" appearance="outline">
+          <mat-select placeholder="Select Framework"  [formControl]="framework" class="form-control" required  >
+            <mat-option (click)="selectFramework(i)" 
+            *ngFor="let item of stepperData.dropdown; let i = index"
+            value='{{item.name}}'>{{ item.name }}
+            </mat-option>
+          </mat-select>
+          <mat-error *ngIf="framework.invalid">Please select framework</mat-error>
+        </mat-form-field>
+      </div>
+      <div class="form-group">
+      <mat-label>Helper</mat-label>
+      <mat-form-field class="matFeild" appearance="outline">
+        <mat-select *ngIf="frameworkIndex == 0 ? true : false"  placeholder="Select Helper"
+           [formControl]="helper" class="form-control" required >
+          <mat-option (click)="selectHelper(item, i)"  
+          *ngFor="let item of stepperData.framework[0].Angular; let i = index" 
+          [value]="item">{{item}}
+        </mat-option>
+        </mat-select>
+        <mat-select  *ngIf="frameworkIndex == 1 ? true : false" placeholder="Select Helper" 
+        [formControl]="helper" class="form-control" required  >
+          <mat-option (click)="selectHelper(item, i)"  
+          *ngFor="let item of stepperData.framework[0].React; let i = index" 
+          [value]="item">{{item}}
+        </mat-option>
+        </mat-select>
+        <mat-error *ngIf="helper.invalid">Please select helper</mat-error>
+       </mat-form-field>
+      </div>
+      </div>
+
+    <div class="matFeildFlex" >
+      <div class="form-group">
+      <mat-label>Backend</mat-label>
+     <mat-form-field class="matFeild" appearance="outline">
+      <mat-select placeholder="Select Backend" [formControl]="backend" class="form-control" required>
+        <mat-option (onSelectionChange)="selectBackend(i)"  
+        *ngFor="let item of stepperData.BackendModules[0].backendList; let i = index" 
+        [value]="item.name">{{item.name}}
+      </mat-option>
+      </mat-select>
+      <mat-error *ngIf="backend.invalid">Please select backend</mat-error>
+    </mat-form-field>
+     </div>
+    <div class="form-group">
+      <mat-label class="matlabel" >Database</mat-label>
+      <mat-form-field class="matFeild" appearance="outline">
+        <mat-select placeholder="Select Database" [formControl]="database" class="form-control" required>
+          <mat-option (click)="selectBackendDataba(item, i)"  
+          *ngFor="let item of stepperData.BackendModules[0].databaseList; let i = index" 
+          [value]="item.name">{{item.name}}
+        </mat-option>
+        </mat-select>
+        <mat-error *ngIf="database.invalid">Please select database</mat-error>
+       </mat-form-field>
+      </div>
+  </div>
+
+  <div class="matButton">
+    <button mat-button class="clearAllButton" (click)="clearAll()">Clear All</button>
+    <button mat-button class="createProjectButton" [disabled]="!projectNameForm.valid"
+     (click)="onNext()">Create Project</button>
+  </div>
+    </form>
+</mat-card>
+
+
+

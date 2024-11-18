@@ -1,0 +1,57 @@
+<div class="content-body">
+
+  <div class="codeGenerator">
+    Code Generator
+  </div>
+  
+  <mat-card [style]="darkModecolor">
+    <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()" >
+      <p class="createAccountTitle"> Create Account </p>
+      <br>
+      <div class="form-group">
+        <mat-label>User Name </mat-label><br>
+        <mat-form-field appearance="outline" color="">
+        <input matInput placeholder="Enter User name" formControlName="first_name"
+        class="form-control" required ngModel name="first_name" autocomplete="off"/>
+        <mat-hint><span *ngIf="!first_name.valid && first_name.touched" class="error-block">
+          Please Provide Valid User Name
+        </span></mat-hint>
+      </mat-form-field>
+    </div>
+        <div class="form-group">
+            <mat-label>Email Address </mat-label><br>
+            <mat-form-field appearance="outline">
+            <input matInput placeholder="Enter Email Address" formControlName="email"
+            class="form-control" required ngModel name="email" autocomplete="off"/>
+            <mat-hint><span *ngIf="!email.valid && email.touched" class="error-block">
+              Please Provide Valid Email
+            </span></mat-hint>
+          </mat-form-field>
+        </div>
+        <div class="form-group">
+            <mat-label>Password </mat-label><br>
+          <mat-form-field appearance="outline">
+            <input matInput type="password" placeholder="Enter Password" formControlName="password"
+            class="form-control" required  autocomplete="off"/>
+            <mat-hint><span *ngIf="!password.valid && password.touched"
+              class="error-block">Minimum Length Should Be 6 Numbers</span></mat-hint>
+          </mat-form-field>
+        </div>
+        <div class="form-group">
+            <mat-label>Confirm Password </mat-label><br>
+          <mat-form-field appearance="outline">
+            <input matInput type="password" placeholder="Enter Confirm Password" formControlName="confirmPassword"
+            class="form-control" required autocomplete="off"/>
+            <mat-hint><span *ngIf="!confirmPassword.valid && confirmPassword.touched"class="error-block">
+              Password Is Mismatched
+            </span></mat-hint>
+          </mat-form-field>
+        </div>
+        <div class="form-group">
+          <button mat-raised-button type="submit">Create Account</button>
+        </div>
+        <p class="alreadyAccount"> Alreadyt have an account? <a routerLink="/login">&nbsp; Login </a></p>
+    </form>
+  </mat-card>
+  
+</div>
